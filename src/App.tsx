@@ -35,7 +35,7 @@ function App(props) {
             <a href="#about-me">About me</a>
             <a href="#skills">Skills</a>
             <a href="#projects-section">Portfolio</a>
-            <a href="#contact">Contact</a>
+            {/* <a href="#contact">Contact</a> */}
           </div>
         </nav>
         {/* // Navigation //landing // Josue */}
