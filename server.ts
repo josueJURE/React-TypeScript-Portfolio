@@ -53,11 +53,7 @@ const prisma = new PrismaClient();
 import { Request, Response } from "express";
 
 app.post("/", (req: Request, res: Response) => {
-  console
-    .log
-    // `${req.method} ${req.secure ? "https" : "http"}://${req.get("host")}${req.originalUrl}`
-    ();
-
+ 
   try {
     const { name, email, subject, message } = req.body;
 

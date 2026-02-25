@@ -2,10 +2,34 @@ import React from "react";
 import InputGroups from "./InputGroups";
 
 function ContactRight() {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const name = (formData.get("name") as string)?.trim() ?? "";
+    const email = (formData.get("email") as string)?.trim() ?? "";
+    const subject = (formData.get("subject") as string)?.trim() ?? "";
+    const message = (formData.get("message") as string)?.trim() ?? "";
+
+    const body = [
+      message,
+      "",
+      `Regards,`,
+      name,
+      `Reply to: ${email}`,
+    ].join("\n");
+
+    const mailtoUrl = `mailto:josue.jure@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoUrl;
+  }
+
   return (
     <>
       <div className="contact-right">
-        <form action="http://localhost:4001/" method="POST">
+        <form onSubmit={handleSubmit}>
           <InputGroups />
 
           <div className="input-group">
