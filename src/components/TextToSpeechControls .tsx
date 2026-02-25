@@ -1,25 +1,14 @@
-// import React from "react";
-import React, { useState } from "react";
-import { FaPlay } from "react-icons/fa";
-import { FaCirclePause } from "react-icons/fa6";
-import { FaRegStopCircle } from "react-icons/fa";
-import { IoSpeedometer } from "react-icons/io5";
-// import '../APP.css';
+import React from "react";
 
 function TextToSpeechControls() {
-  const [count, setCount] = useState<number>(0.25);
-
-  function handleCount(event: React.ChangeEvent<HTMLInputElement>) {
-    const value = parseFloat(event.target.value);
-    setCount(value);
-  }
+  const audioSrc = `${import.meta.env.BASE_URL}speech.mp3`;
 
   return (
     <div className="recording">
       <audio 
         style={{ width: '25rem', height: '9rem' }} 
         controls 
-        src="/speech.mp3"  // Note the leading slash
+        src={audioSrc}
       />
       {/* Rest of your component */}
     </div>

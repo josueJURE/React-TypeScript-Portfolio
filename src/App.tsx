@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import SkillsCard from "./components/SkillsCard";
 import ProjectsSection from "./components/ProjectsSection";
-import ContactLeft from "./components/ContactLeft";
-import ContactRight from "./components/ContactRight";
+// import ContactLeft from "./components/ContactLeft";
+// import ContactRight from "./components/ContactRight";
 import Footer from "./components/Footer";
 import Icon from "./components/Icon";
 // import UseTextToSpeech from "./components/UseTextToSpeech";
@@ -118,7 +118,7 @@ function App(props) {
 
         <ProjectsSection />
         {/* // End of Projects // Contact */}
-        <section className="contact" id="contact">
+        {/* <section className="contact" id="contact">
           <h1 className="section-bg-heading">Contact Me</h1>
           <h1 className="section-heading">Contact</h1>
           <h3 className="sub-heading">
@@ -129,7 +129,7 @@ function App(props) {
             <ContactLeft />
             <ContactRight />
           </div>
-        </section>
+        </section> */}
         <Footer />
       </div>
     </div>

@@ -210,4 +210,22 @@ app.use(express.static(path.join(__dirname, "public")));
 const port = process.env.PORT || 5173;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
+
+
+ function countFours() {
+  let count = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "4") {
+      count++
+    }
+  }
+  return count
+ }
+
 });
+
+
+let s = "283479131515574857242454150695950829533116861727855889075098381754637464939319255060400927701671139009848824012858361603563707660104710181942955596198946767837449448255379774726847104047534646208046684259069491293313677028989152104752162056966024058038150193511253382430035587640247496473263914199272604269922796"
+
+console.log("how many 4", countFours(s))
