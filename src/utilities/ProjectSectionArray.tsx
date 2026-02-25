@@ -32,13 +32,13 @@ const projectData: ProjectDataType = [
     projectName: "ChatGPT recipe-app",
     projectDescription: " Recipe For Success is a web application that generates personalised recipes based on user preferences and dietary restrictions. Utilising the OpenAI API for text and image generation, this app provides unique recipes complete with AI-generated images"
   },
-  {
-    link: "https://recipe-app-nextjs-version.onrender.com",
-    image_video: "images/recipe-app-2.0.jpg",
-    skills: ["React, NextJS, CI/CD pipeline"],
-    projectName: "ChatGPT recipe-app 2.0",
-    projectDescription: "The application stands as a testament to my continuous learning and passion for web development. It was initially a pure vanilla JS project, but its version 2.0 is written in Next.js, Tailwind CSS, and features automated testing with a CI/CD pipeline. "
-  },
+  // {
+  //   link: "https://recipe-app-nextjs-version.onrender.com",
+  //   image_video: "images/recipe-app-2.0.jpg",
+  //   skills: ["React, NextJS, CI/CD pipeline"],
+  //   projectName: "ChatGPT recipe-app 2.0",
+  //   projectDescription: "The application stands as a testament to my continuous learning and passion for web development. It was initially a pure vanilla JS project, but its version 2.0 is written in Next.js, Tailwind CSS, and features automated testing with a CI/CD pipeline. "
+  // },
   // {
   //   link: "http://shopping-cart-jj.vercel.app/",
   //   image_video: "images/shopping_cart3.webp",
