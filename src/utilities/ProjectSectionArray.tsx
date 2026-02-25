@@ -39,13 +39,13 @@ const projectData: ProjectDataType = [
     projectName: "ChatGPT recipe-app 2.0",
     projectDescription: "The application stands as a testament to my continuous learning and passion for web development. It was initially a pure vanilla JS project, but its version 2.0 is written in Next.js, Tailwind CSS, and features automated testing with a CI/CD pipeline. "
   },
-  {
-    link: "http://shopping-cart-jj.vercel.app/",
-    image_video: "images/shopping_cart3.webp",
-    skills: ["React, ", "TypeScript, " , "HTML"],
-    projectName: "Shopping Cart",
-    projectDescription: "This project, written in React and TypeScript, gave me the opportunity to learn about the useContext React hook, which in some cases proves to be a better alternative to prop drilling. I use Supabase as a backend service to store my data. It is still a work in progress."
-  },
+  // {
+  //   link: "http://shopping-cart-jj.vercel.app/",
+  //   image_video: "images/shopping_cart3.webp",
+  //   skills: ["React, ", "TypeScript, " , "HTML"],
+  //   projectName: "Shopping Cart",
+  //   projectDescription: "This project, written in React and TypeScript, gave me the opportunity to learn about the useContext React hook, which in some cases proves to be a better alternative to prop drilling. I use Supabase as a backend service to store my data. It is still a work in progress."
+  // },
 
   {
     link: "https://josuejure.github.io/calculator/",
