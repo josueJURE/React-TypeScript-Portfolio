@@ -129,7 +129,27 @@ app.use("/audio", express.static(path.join(__dirname)));
 
 
 app.use(express.static(path.join(__dirname, "public")));
-const port = process.env.PORT || 4001;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+function resolvePort(rawPort: string | undefined): number {
+  if (!rawPort) return 4001;
+
+  const numericPort = Number(rawPort);
+  if (Number.isInteger(numericPort) && numericPort > 0) return numericPort;
+
+  try {
+    const parsedUrl = new URL(rawPort);
+    const urlPort = Number(parsedUrl.port);
+    if (Number.isInteger(urlPort) && urlPort > 0) return urlPort;
+  } catch {
+    // Ignore invalid URL format and fall back below.
+  }
+
+  console.warn(`Invalid PORT value "${rawPort}". Falling back to 4001.`);
+  return 4001;
+}
+
+const port = resolvePort(process.env.PORT);
+const host = "0.0.0.0";
+
+app.listen(port, host, () => {
+  console.log(`Server running on ${host}:${port}`);
 });
