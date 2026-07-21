@@ -45,15 +45,11 @@ const skillsData: SkillsDataType = [
       description: "I've learned a lot more about React and React hooks through the courses I've completed on Codecademy. I've earned two certificates of completion from this learning platform. In my project section, you will see that three of my projects have been written in React or Next.js."
     },
     {
-      skill: "Prisma ORM",
+      skill: "PostgreSQL",
       percentage: "30%",
-      description: "A next-generation Node.js and TypeScript ORM that unlocks a new level of developer experience when working with databases, thanks to its type-safety & auto-completion."
+      description: "A powerful open-source relational database management system that uses SQL to store, query, update, and manage structured data efficiently"
     },
-    {
-      skill: "Playwright",
-      percentage: "20%",
-      description: "I am currently being mentored by a seasoned software developer with 35 years of experience in the industry. We are focusing on unit testing with Playwright, which has helped me understand the importance of testing in preventing bugs from reaching production."
-    }
+
 
   ];
 

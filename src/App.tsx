@@ -52,7 +52,7 @@ function App(props) {
                 Hello, <span>my name is</span>
               </h3>
               <h1 className="name">
-                <span>Josue</span> Juré
+                <span>Josué</span> Juré
               </h1>
               <h3 className="prof">
                 I am <span>a Web Developer</span>
@@ -61,7 +61,7 @@ function App(props) {
                {myText}
               </p>
 
-              <TextToSpeechControls/>
+              {/* <TextToSpeechControls/> */}
  
               <div className="social-media">
                 <a href="https://linkedin.com/in/josué-jure-3799b9127">
@@ -74,7 +74,7 @@ function App(props) {
                   <i className="">codewars</i>
                 </a> */}
               </div>
-              <div className="cv">
+              {/* <div className="cv">
                 <button className="btn cv-btn">
                   <a
                     target="_blank"
@@ -86,20 +86,20 @@ function App(props) {
                   </a>
                 </button>
                 <span>My Skill</span>
-              </div>
+              </div> */}
             </div>
             <div className="developer-img">
               <div className="dev-img-wrapper">
                 <img src="images/me.jpg" alt="" />
               </div>
-              <div className="dev-experience dev-work">
+              {/* <div className="dev-experience dev-work">
                 <span>10+</span>
                 <span>projects completed</span>
               </div>
               <div className="dev-projects dev-work">
                 <span>570+</span>
                 <span>Katas completed</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

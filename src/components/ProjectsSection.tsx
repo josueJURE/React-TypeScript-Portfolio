@@ -4,10 +4,10 @@ import React from "react"
 function ProjectsSection() {
   return (
     <section className="projects" id="projects-section">
-      <h1 className="section-bg-heading">My Projects</h1>
+      <h1 className="section-bg-heading">My Commercial Project</h1>
       <h1 className="section-heading">Portfolio</h1>
       <h3 className="sub-heading">
-        My <span>Projects</span>
+        My <span>AI-powered Commercial Project</span>
       </h3>
       <div className="projects-cards">
         {projectData.map((item, index) => (
